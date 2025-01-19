@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice App</title>
+  </head>
+  <body>
+    <main class="flex flex-col h-screen">
+      <header class="">
+        <div class="container">
+          <div class="mb-5 p-2">
+            <h1 class="text-2xl font-bold font-sans">MMS Solutions</h1>
+            <p class="font-sans text-lg text-stone-500">Invoice App</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="">
+        <div class="container">
+          <form class="mb-5">
+            <div class="grid grid-cols-4 gap-3">
+              <div class="col-span-2">
+                <select
+                  id="select-product"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-stone-500 dark:focus:border-stone-500"
+                >
+                  <option selected>Select Product</option>
+                  <option value="apple">Apple</option>
+                  <option value="mango">Mango</option>
+                  <option value="banana">Banana</option>
+                  <option value="kiwi">kiwi</option>
+                </select>
+              </div>
+
+              <div class="col-span-1">
+                <input
+                  type="number"
+                  id="quantity"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-stone-500 dark:focus:border-stone-500"
+                  placeholder="Quantity"
+                  required
+                />
+              </div>
+
+              <div class="col-span-1">
+                <button
+                  type="button"
+                  class="text-white bg-stone-800 rounded-lg hover:bg-stone-900 focus:ring-4 focus:ring-stone-300 font-medium text-sm px-5 py-2.5 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
+                >
+                  Add Record
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="container mb-5">
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table
+              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+            >
+              <thead
+                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">Product name</th>
+                  <th scope="col" class="px-6 py-3">Price</th>
+                  <th scope="col" class="px-6 py-3">Quantity</th>
+                  <th scope="col" class="px-6 py-3">Cost</th>
+                  <th scope="col" class="px-6 py-3">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    colspan="5"
+                    class="px-6 py-4 text-center font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    There no record yet
+                  </th>
+                </tr>
+                <tr
+                  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Apple
+                  </th>
+                  <td class="px-6 py-4 text-end">500</td>
+                  <td class="px-6 py-4 text-end">3</td>
+                  <td class="px-6 py-4 text-end">1500</td>
+                  <td class="px-6 py-4 text-end">
+                    <a
+                      href="#"
+                      class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      >Remove</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Apple
+                  </th>
+                  <td class="px-6 py-4 text-end">500</td>
+                  <td class="px-6 py-4 text-end">3</td>
+                  <td class="px-6 py-4 text-end">1500</td>
+                  <td class="px-6 py-4 text-end">
+                    <a
+                      href="#"
+                      class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      >Remove</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Apple
+                  </th>
+                  <td class="px-6 py-4 text-end">500</td>
+                  <td class="px-6 py-4 text-end">3</td>
+                  <td class="px-6 py-4 text-end">1500</td>
+                  <td class="px-6 py-4 text-end">
+                    <a
+                      href="#"
+                      class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      >Remove</a
+                    >
+                  </td>
+                </tr>
+                <tr class="border-b dark:border-gray-700">
+                  <th
+                    scope="row"
+                    colspan="3"
+                    class="px-6 py-4 text-end font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Total
+                  </th>
+                  <td class="px-6 py-4 text-end">4500</td>
+                </tr>
+                <tr class="border-b dark:border-gray-700">
+                  <th
+                    scope="row"
+                    colspan="3"
+                    class="px-6 py-4 text-end font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Tax
+                  </th>
+                  <td class="px-6 py-4 text-end">500</td>
+                </tr>
+                <tr class="border-b dark:border-gray-700">
+                  <th
+                    scope="row"
+                    colspan="3"
+                    class="px-6 py-4 text-end font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Net Total
+                  </th>
+                  <td class="px-6 py-4 text-end">5000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="fixed px-3 w-[400px] h-screen right-0 translate-x-full duration-200 bg-stone-50 shadow"
+      >
+        <div class="side-bar-header">
+          <div class="mb-5">
+            <h1 class="text-2xl font-bold font-sans">Manage Inventory</h1>
+            <p class="font-sans text-lg text-stone-500">Available Items</p>
+          </div>
+        </div>
+
+        <div class="side-bar-body flex flex-col gap-3 mb-5">
+          <div class="flex justify-between p-3 border border-stone-600">
+            <h3>Apple</h3>
+            <h3>500</h3>
+          </div>
+          <div class="flex justify-between p-3 border border-stone-600">
+            <h3>Apple</h3>
+            <h3>500</h3>
+          </div>
+          <div class="flex justify-between p-3 border border-stone-600">
+            <h3>Apple</h3>
+            <h3>500</h3>
+          </div>
+          <div class="flex justify-between p-3 border border-stone-600">
+            <h3>Apple</h3>
+            <h3>500</h3>
+          </div>
+          <div class="flex justify-between p-3 border border-stone-600">
+            <h3>Apple</h3>
+            <h3>500</h3>
+          </div>
+        </div>
+
+        <div class="side-bar-footer bg-stone-100 p-3 rounded-lg">
+          <div class="grid grid-cols-3 grid-rows-2 gap-3">
+            <div class="col-span-3">
+              <input
+                  type="text"
+                  id="product"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-stone-500 dark:focus:border-stone-500"
+                  placeholder="Product Name"
+                  required
+                />
+            </div>
+            <div class="col-span-2">
+              <input
+                  type="number"
+                  id="price"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-stone-500 dark:focus:border-stone-500"
+                  placeholder="Price"
+                  required
+                />
+            </div>
+            <div class="col-span-1">
+              <button
+              type="button"
+              class="text-white w-full text-nowrap rounded-lg bg-stone-800 hover:bg-stone-900 focus:ring-4 focus:ring-stone-300 font-medium text-sm px-2 py-2.5 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
+            >
+              Add Product
+            </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-auto">
+        <div class="container">
+          <div class="flex justify-end gap-3">
+            <button
+              type="button"
+              class="py-2.5 px-5 text-sm font-medium text-stone-800 focus:outline-none bg-white border border-stone-800 hover:bg-gray-100 hover:text-stone-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              Manage Inventory
+            </button>
+            <button
+              type="button"
+              class="text-white bg-stone-800 hover:bg-stone-900 focus:ring-4 focus:ring-stone-300 font-medium text-sm px-5 py-2.5 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
+            >
+              Print
+            </button>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

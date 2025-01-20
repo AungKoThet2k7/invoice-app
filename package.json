@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "flowbite": "^2.5.2",
-    "sweetalert2": "^11.15.10"
+    "sweetalert2": "^11.15.10",
+    "uuid": "^11.0.5"
   }
 }

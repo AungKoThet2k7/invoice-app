@@ -8,3 +8,7 @@ export const manageIventoryBtnHandler = () => {
 export const closeSideBarBtnHandler = () => {
   sideBar.classList.add("translate-x-full");
 };
+
+export const printBtnHandler = () => {
+  window.print();
+};
